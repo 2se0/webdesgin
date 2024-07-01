@@ -8,6 +8,25 @@
   <title>플롯</title>
   <style>
     /* 도서를 참조하여 작성해보세요 */
+    .portfolio_list{
+      width: 860px;
+      margin: 0 auto;
+      padding: 10px;
+      background: #eee;
+    }
+    .portfolio_list li{
+      float: left;
+      margin-right: 20px;
+      list-style: none;
+    }
+    .portfolio_list li:last-child{
+      margin-right: 0;
+    }
+    .portfolio_list::after{/* 플롯을 해제하는 법 */
+      content: '';
+      clear: both;/* 인라인요소에는 먹히질 않음 */
+      display: block;/*  */
+    }
   </style>
 </head>
 
