@@ -7,6 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Flexible box basic</title>
 	<style>
+    /* .parent{
+      display: flex;
+    } */
+    .parent{
+      display: inline-flex;/* 글씨 성격을 가짐 */
+    }
+    body{
+      text-align: center;
+    }
 		.parent div {
 			background: #ebebeb;
 			border: #ccc 1px solid;
@@ -16,6 +25,11 @@
 </head>
 
 <body>
+	<div class="parent">
+		<div>Flex-item</div>
+		<div>Flex-item</div>
+		<div>Flex-item</div>
+	</div>
 	<div class="parent">
 		<div>Flex-item</div>
 		<div>Flex-item</div>
