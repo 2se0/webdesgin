@@ -12,6 +12,9 @@
       border: 1px solid;
       display: flex;
     }
+    .parent .grow{
+      flex-grow: .5;
+    }/* 모자란 공간을 늘려서 채우는 속성, 남는 여백을 채움 */
 
     .parent div {
       width: 100px;
@@ -24,6 +27,31 @@
     }
     .shrink div {
       width: 200px;
+    }
+    .shrink div:last-child{
+      flex-shrink: 2;/* 넘치는 요소를 축소 */
+    }
+    .parent .basis{
+      flex-basis: 180px;/* 값을 직접 줌 */
+    }
+    /* .all div{
+      flex: 1 1 0;
+    }얼만큼 늘릴거니, 얼만큼 줄일거니, 안에 컨텐츠 크기만큼 나와  */
+    .all div {
+      transition: 0.3s;
+    }
+    .all div:first-child{
+      flex:1 1 0;
+    }
+    .all div:nth-child(2){
+      flex:1 1 0;
+    }
+    .all div:nth-child(3){
+      flex:1 1 0;
+    }
+    .all div:hover{
+      flex:2;
+      background-color: #ccc;
     }
   </style>
 </head>

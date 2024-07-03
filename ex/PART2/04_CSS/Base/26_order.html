@@ -9,7 +9,7 @@
   <style>
     .parent {
       width: 600px;
-
+      display: flex;
     }
 
     .parent div {
@@ -20,6 +20,16 @@
       padding: 10px;
       text-transform: uppercase;
     }
+
+    /* .parent div:nth-child(1){
+      order: 2;
+    } */
+    .parent div:nth-child(2){
+      order: -1;
+    }/* 숫자가 작으면 앞으로 배치됨/order안줬으면 0임 */
+    /* .parent div:nth-child(3){
+      order: 1;
+    } */
   </style>
 </head>
 

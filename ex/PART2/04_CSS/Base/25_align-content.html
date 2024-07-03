@@ -12,15 +12,20 @@
       height: 400px;
       margin: 20px;
       border: 1px solid;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
     }
 
     .parent div {
-      width: 100%;
+      width: 50%;
       height: 50px;
       background: #ebebeb;
       border: 1px solid #ccc;
       padding: 10px;
       text-transform: uppercase;
+      /* box-sizing: border-box; flex사용하면 자식 안넘침*/
     }
   </style>
 </head>
