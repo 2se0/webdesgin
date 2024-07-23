@@ -14,11 +14,14 @@
 <body>
   <h1>함수 구조</h1>
   <script>
+    let sum //전역변수
+    let result = add(10, 30); //10, 30 전달 인자(argument)
+
     function add(a, b) { //a,b 매개변수(parameter)
-      let sum = a + b;
+      // let sum = a + b; //지역변수
+      sum = a + b
       return sum;
     }
-    let result = add(10, 30); //10, 30 전달 인자(argument)
     document.write(result);
   </script>
 
