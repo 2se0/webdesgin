@@ -9,14 +9,30 @@
 </head>
 
 <body>
-  <h1>SetInterval</h1>
+  <h1>SetInterval</h1> 
+  <button id="stop">stop</button>
+  <button id="start">start</button>
+  <script>//일정시간마다 할일
+   
+   let interval;
 
-  <script>
-    let interval = setInterval(function () {
+    function auto (){
+        interval = setInterval(function () {
+            alert('반갑습니다.');
+        }, 4000);
+    }
+    
+    auto();
+
+      document.querySelector('#stop').addEventListener('click',()=>{
+        clearInterval(interval);
+      })
+
+      document.querySelector('#start').addEventListener('click',()=>{
+        setInterval(function () {
           alert('반갑습니다.');
-     }, 4000);
-     
-    //clearInterval(interval);
+      }, 4000);
+      })
   </script>
 
 </body>
