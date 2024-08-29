@@ -11,17 +11,20 @@
 <body>
   <h1>비교연산자</h1>
   <script>
-    if (1 != '1') {
+    if (1 != '1') { // == 는 타입을 따지지 않는다
       document.write('두 값은 같지 않다');
     } else {
       document.write('두 값은 같다');
     }
   </script> 
-
+  <hr>
+  <script>
+    (1 == '1') ? document.write('o') : document.write('x')
+  </script>
   <hr>
   
   <script>
-    if (2 !== '2') {
+    if (2 !== '2') { // === 타입까지 같냐
       document.write('두 값은 같지 않다');
     } else {
       document.write('두 값은 같다');

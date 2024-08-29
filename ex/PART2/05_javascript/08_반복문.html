@@ -12,8 +12,8 @@
   <h1>반복문</h1>
   <h2>for 반복문</h2>
   <script>
-    for (var i = 0; i <= 10; i += 2) {
-      document.write(i + '<br>');
+    for (var i = 0; i <= 10; i += 2) { //1, 2 , 4
+      document.write(i + '<br>'); // 3
     }
   </script>
   <h2>while 반복문</h2>
@@ -27,7 +27,7 @@
   <h2>forEach 반복문</h2>
   <script>
     let arr = ['a', 'b', 'c', 'd', 'e'];
-    arr.forEach(function (item, index, all) {
+    arr.forEach(function (item, index, all) { // 배열에서
       document.write(item + '는 전체 배열 ' + all + '에서 ' + index + '번째 값입니다' + '<br>');
     });
   </script>
