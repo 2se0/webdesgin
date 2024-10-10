@@ -14,25 +14,40 @@
   <button id="start">start</button>
   <script>//일정시간마다 할일
    
-   let interval;
+  //  let interval;
 
-    function auto (){
-        interval = setInterval(function () {
-            alert('반갑습니다.');
-        }, 4000);
-    }
+  //   function auto (){
+  //       interval = setInterval(function () {
+  //           alert('반갑습니다.');
+  //       }, 4000);
+  //   }
     
-    auto();
+  //   auto();
 
+  let interval;
+  
       document.querySelector('#stop').addEventListener('click',()=>{
         clearInterval(interval);
       })
 
-      document.querySelector('#start').addEventListener('click',()=>{
-        setInterval(function () {
-          alert('반갑습니다.');
-      }, 4000);
-      })
+        document.querySelector('#start').addEventListener('click',()=>{
+          interval = setInterval(function () {
+            alert('반갑습니다.');
+          }, 4000);
+        })
+        
+  // let interval;
+  
+  //     document.querySelector('#stop').addEventListener('click',()=>{
+  //       clearInterval(interval);
+  //     })
+
+  //       document.querySelector('#start').addEventListener('click',()=>{
+  //         interval = setInterval(function () {
+  //           alert('반갑습니다.');
+  //         }, 4000);
+  //       })
+
   </script>
 
 </body>
