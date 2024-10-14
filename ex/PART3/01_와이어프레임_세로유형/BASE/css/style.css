@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: "맑은 고딕";
+  font-size: 14px;
+  color: #333;
+}
+
+::after cf{
+  content: " ";
+  clear: both;
+}
+
+/* 와이어프레임 */
+.wrapper{
+  width: 1000px;
+  height: 650px;
+}
+
+.wrapper aside{
+  width: 200px;
+  height: 100%;
+  float: left;
+  background: #aaa;
+}
+
+.wrapper main{
+  width: 800px;
+  height: 100%;
+  float: right;
+  background: #bbb;
+}
+
+/* aside */
+aside .logo{
+  height: 100px;
+  background: #999;
+}
+
+aside nav{
+  height: 550px;
+  background: #888;
+}
+
+/* main */
+main .slides{
+  height: 350px;
+  background: #777;
+}
+
+main .contents{
+  height: 200px;
+  background: #666;
+}
+
+/* main .contents > div{
+  width: 33.3%;
+  height: 200px;
+  float: left;
+} */
+
+main .notice{
+  width: 33.3%;
+  height: 200px;
+  float: left;
+  background: #555;
+}
+
+main .gallery{
+  width: 33.3%;
+  height: 200px;
+  float: left;
+  background: #444;
+}
+
+main .quick_link{
+  width: 33.3%;
+  height: 200px;
+  float: left;
+  background: #333;
+}
+
+/* footer */
+main footer .copylight{
+  float: left;
+  width: 200px;
+  background: #222;
+}
+
+main footer .sns{
+  width: 600px;
+  float: right;
+}
+
+footer .sns > *{
+  height: 50px;
+}
+
+.sns .list{
+  background: #ccc;
+}
+
+.sns .family_site{
+  background: #eee;
+}
