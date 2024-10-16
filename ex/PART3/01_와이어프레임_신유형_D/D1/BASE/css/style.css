@@ -15,6 +15,91 @@ a{
   color:inherit
 }
 
+/* layout */
 main{
   display: flex;
+}
+
+main > *{
+  border: 1px solid #ccc;
+}
+
+aside{
+  width: 200px;
+}
+
+.content{
+  /* width: calc(100%-200px); */
+  flex: 1;
+}
+
+ /* Aside */
+
+aside > *{
+  border: 1px solid #ccc;
+}
+
+aside header{
+  height: 100px;
+}
+
+aside nav{
+  height: 400px;
+}
+
+aside .spot_menu{
+  height: 50px;
+}
+
+/* side_wrapper */
+.side_wrapper{
+  height: 400px;
+  position: relative;
+}
+
+.slides_img{
+  height: 400px;
+  border: 1px solid red;
+}
+
+.slides_banner{
+  position: absolute;
+  border: 1px solid blue;
+  width: 150px;
+  height: 300px;
+  right: 0;
+  top: 0;
+}
+
+/*  shorcut*/
+.shorcut{
+  border: 1px solid green;
+  height: 200px;
+}
+
+.news_gallery{
+  border: 1px solid pink;
+  height: 250px;
+}
+
+/* footer */
+footer{
+  display: flex;
+}
+
+footer > *{
+  border: 1px solid #ccc;
+  height: 100px;
+}
+
+footer .logo{
+  width: 200px;
+}
+
+footer .copylight{
+  flex: 1;
+}
+
+footer .sns{
+  width: 250px;
 }
