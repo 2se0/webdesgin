@@ -19,6 +19,7 @@ a{
   display: none;
 }
 
+
 /* layout */
 main{
   display: flex;
@@ -28,32 +29,35 @@ main > *{
   border: 1px solid #ccc;
 }
 
-main aside{
+/* aside */
+aside {
+}
+
+aside > *{
   width: 200px;
-}
-
-main aside header{
-  height: 150px;
   border: 1px solid #ccc;
 }
 
-main aside nav{
-  height: 400px;
-  border: 1px solid #ccc;
+aside header{
+  height: 100px;
 }
 
-section .content{
+aside nav{
+  height: 550px;
+}
+
+main .content{
   flex: 1;
 }
 
 /* slide */
 .slide_wrapper{
   display: flex;
+  height: 400px;
 }
 
-.slide_wrapper > * {
-  border: 1px solid #CCC;
-  height: 400px;
+.slide_wrapper > *{
+  border: 1px solid #ccc;
 }
 
 .slide_image{
@@ -67,29 +71,29 @@ section .content{
 /* news */
 .news_gallery{
   display: flex;
+  height: 250px;
 }
 
 .news_gallery > *{
   border: 1px solid #ccc;
-  height: 250px;
   flex: 1;
 }
 
 /* footer */
 footer{
   display: flex;
+  height: 100px;
 }
 
 footer > *{
   border: 1px solid #ccc;
-  height: 100px;
 }
 
 .footer_logo{
   width: 200px;
 }
 
-.copylight{
+.copyright{
   flex: 1;
 }
 
