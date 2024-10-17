@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "맑은고딕";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+}
+
+a{
+  color: inherit;
+}
+
+.hidden{
+  display: none;
+}
+
+/* layout */
+main{
+  display: flex;
+}
+
+main >*{
+  border: 1px solid #ccc;
+}
+
+aside{
+
+}
+
+aside >*{
+  width: 200px;
+  border: 1px solid #ccc; 
+}
+
+aside header{
+  height: 150px;
+}
+
+aside nav{
+  height: 200px;
+}
+
+.main_content{
+  flex: 1 ;
+}
+
+.main_content >*{
+  border: 1px solid #ccc;
+}
+
+/* slide */
+.slide_warpper{
+  height: 400px;
+}
+
+.slide_banner{
+  height: 150px;
+}
+
+.news_gallery{
+  display: flex;
+}
+.news_gallery > *{
+  border: 1px solid #ccc;
+  height: 250px;
+  flex: 1;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+}
+
+footer > *{
+  height: 120px;
+  border: 1px solid #ccc;
+}
+
+.footer_logo{
+  width: 200px;
+}
+
+.footer_content{
+  flex: 1;
+}
+
+.footer_content > *{
+  height: 60px;
+  border: 1px solid #ccc;
+}
+
+.family_site{
+  width: 300px;
+}
