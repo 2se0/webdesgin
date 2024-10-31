@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "맑은 고딕";
+  color: #333;
+  box-sizing: border-box;
+}
+
+a{
+  color: inherit;
+}
+
+.hidden{
+  display: none;
+}
+
+/* layout */
+body > *{
+  border: 1px solid #ccc;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+}
+
+main > *{
+  border: 1px solid #ccc;
+}
+
+main{
+  flex: 1;
+  display: flex;
+}
+
+/* aside */
+aside > *{
+  border: 1px solid #ccc;
+}
+
+aside{
+  width: 200px;
+}
+
+header{
+  height: 100px;
+}
+
+nav{
+  height: 150px;
+}
+
+/* center */
+.center > *{
+  border: 1px solid #ccc; 
+}
+
+.center{
+  width: 400px;
+}
+
+.shorcut{
+  height: 120px;
+}
+
+.notice{
+  height: 150px;
+}
+
+.galler{
+  height: 220px;
+}
+
+.slide-banner{
+  height: 100px;
+}
+
+/* slide */
+.slide-wrapper{
+  flex: 1;
+}
+
+
+/* footer */
+footer > *{
+  border: 1px solid #ccc;
+}
+
+footer{
+  height: 120px;
+  display: flex;
+}
+
+.logo{
+  width: 200px;
+}
+
+.footer-center{
+  flex: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.footer-center > *{
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.family-site{
+  width: 250px;
+}
