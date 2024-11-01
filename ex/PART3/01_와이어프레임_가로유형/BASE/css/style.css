@@ -1,96 +1,95 @@
 @charset "utf-8";
+
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
   text-decoration: none;
-  font-family: '맑은 고딕';
   font-size: 14px;
-  color:#333;
+  font-family: "맑은 고딕";
+  color: #333;
+  box-sizing: border-box;
 }
 
-.cf::after{
-  content: '';
+a{
+  color: inherit;
+}
+
+.hidden{
+  display: none;
+}
+
+.cf{
   display: block;
+  content: "";
   clear: both;
 }
 
-/* wireframe */
-
+/* layout */
 .wrapper{
   width: 1200px;
   margin: 0 auto;
 }
 
+/* header */
 header{
   height: 100px;
   background: #aaa;
 }
+header > *{
+  float: left;
+  border: 1px solid red;
+}
+header .logo{
+  width: 200px;
+  height: 100%;
+}
+
+nav{
+  width: 1000px;
+  height: 100%;
+}
+
 
 .slide{
   height: 300px;
   background: #bbb;
 }
 
+/* main */
 main{
   height: 200px;
   background: #ccc;
 }
 
+main > *{
+  border: 1px solid red;
+  float: left;
+  height: 100%;
+  width: 400px;
+}
+
+
+/* footer */
 footer{
   height: 100px;
   background: #ddd;
 }
 
-/* header */
-header .logo{
+footer > *{
+  border: 1px solid red;
   height: 100%;
+  float: left;
+}
+
+.footer_logo{
   width: 200px;
-  float: left;
-  background: #999;
 }
 
-header nav{
-  height: 100%;
-  width: 1000px;
-  float: right;
-  background: #888;
-}
-
-/* section */
-main section{
-  height: 100%;
-  width: 400px;
-  float: left;
-}
-
-main .notice{
-  background: #777;
-}
-main .banner{
-  background: #666;
-}
-main .quick_links{
-  background: #555;
-}
-
-/* footer */
-footer div{
-  float: left;
-  height: 100%;
-}
-
-footer .logo{
-  width: 200px;
-  background: #444;  
-}
-
-footer .copyright{
+.copylight{
   width: 800px;
-  background: #333;
 }
 
-footer .sns{
+.sns{
   width: 200px;
-  background: #222;
 }
