@@ -42,12 +42,49 @@ header .logo{
 	float: left;
 	height: 100%;
 }
+
 header nav{
-	width: 1000px;
-	background: #888;
+  width: 720px;
+  margin-top: 30px;
+  margin-right: 10px;
 	float: right;
-	height: 100%;
+  z-index: 1;
 }
+
+nav > ul > li{
+  float: left;
+  width: 180px;
+  line-height: 40px;
+  text-align: center;
+  /* position: relative; */
+}
+
+nav > ul > li a{
+  display: block;
+  color: white;
+  background: #333;
+}
+
+nav  ul  ul  li  a{
+  background: #fff;
+  color: #333;
+}
+
+nav > ul > li a:hover{
+  background:skyblue;
+}
+
+nav  ul  ul  li  a:hover{
+  color: #fff;
+}
+
+nav  ul  ul{
+  /* position: absolute;
+  left: 0;
+  width: 100%; */
+  display: none;
+}
+
 /* Main Contents */
 main section{
 	width: 400px;
