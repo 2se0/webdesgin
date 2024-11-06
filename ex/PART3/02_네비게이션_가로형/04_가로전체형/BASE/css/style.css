@@ -22,6 +22,23 @@
 header{
 	height: 100px;
 	background: #aaa;
+  position: relative;
+  z-index: 1;
+}
+
+header:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  top: 100%;
+  background: #ccc;
+  transition: height 0.4s ease-in-out;
+  z-index: -1;
+}
+header.active:after{
+  height: 160px;
 }
 .slides{
 	height: 300px;
@@ -53,6 +70,41 @@ header nav{
 	float: right;
 }
 /* Navigation */
+nav {
+  width: 720px;
+  margin-top: 60px;
+  margin-right: 10px;
+}
+
+nav > ul > li{
+  float: left;
+  width: 180px;
+  line-height: 40px; 
+  text-align: center;
+  position: relative;
+}
+
+nav > ul > li > a{
+  color: #fff;
+  display: block;
+  background: #333;
+}
+
+nav ul ul a{
+  display: block;
+  color: #333;
+}
+
+nav > ul > li > a:hover{
+  background: skyblue;
+}
+
+nav ul ul{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: none;
+}
 
 
 /* Main Contents */
