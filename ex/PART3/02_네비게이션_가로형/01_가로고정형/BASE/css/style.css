@@ -53,19 +53,22 @@ header nav{
   z-index: 1;
 }
 
-nav > ul > li {
+nav > ul > li{
   float: left;
   width: 180px;
   line-height: 40px;
   text-align: center;
-
   position: relative;
 }
 
-nav > ul > li a {
+nav > ul > li a{
   display: block;
   background: #333;
   color: #fff;
+}
+
+nav > ul > li a:hover{
+  background: skyblue;
 }
 
 nav ul ul li a{
@@ -73,11 +76,7 @@ nav ul ul li a{
   color: #333;
 }
 
-nav > ul > li a:hover{
-  background: skyblue;  
-}
-
-nav ul ul{
+nav ul ul {
   display: none;
   position: absolute;
   width: 100%;

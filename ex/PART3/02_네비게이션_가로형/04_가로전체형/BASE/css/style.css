@@ -33,13 +33,15 @@ header:after{
   right: 0;
   height: 0;
   top: 100%;
-  background: #ccc;
+  background: #fff;
   transition: height 0.4s ease-in-out;
   z-index: -1;
 }
+
 header.active:after{
   height: 160px;
 }
+
 .slides{
 	height: 300px;
 	background: #bbb;
@@ -70,7 +72,7 @@ header nav{
 	float: right;
 }
 /* Navigation */
-nav {
+header nav {
   width: 720px;
   margin-top: 60px;
   margin-right: 10px;
