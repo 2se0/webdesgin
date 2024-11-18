@@ -81,3 +81,17 @@ footer .sns{
 	background: #222;
 }
 /* Slides */
+.container{
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+
+.slide{
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: none;
+}

@@ -48,6 +48,21 @@ header nav{
 	float: right;
 	height: 100%;
 }
+/* Sldie */
+.slidewapper{
+  overflow: hidden;
+  height: 300px;
+}
+
+.container{
+  height: 900px;
+}
+
+.slide{
+  width: 1200px;
+  height: 300px;
+}
+
 /* Main Contents */
 main section{
 	width: 400px;
