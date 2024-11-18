@@ -29,7 +29,9 @@ header{
 }
 main{
 	height: 200px;
-	background: #ccc ;
+	background: #fff ;
+  padding: 10px 0; 
+  box-sizing: border-box;
 } 
 footer{
 	height: 100px;
@@ -64,7 +66,64 @@ main .quick_links{
 	background: #555;
 }
 /* TAB */
+.notice{
+  position: relative;
+}
+.tapmenu > li{
+  float: left;
+}
+.tapmenu>li>a{
+  display: block;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  background: #ccc;
+  position: relative;
+  z-index: 1;
+  top: 1px;
+}
+.tapmenu>li.active > a{
+  background: #fff;
+}
+.tapmenu > li > ul{
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 150px;
+  border: 1px solid #ccc;
+  background: #fff;
+  box-sizing: border-box;
+  display: none;
+}
 
+.tapmenu>li.active ul{
+  display: block;
+}
+
+#notice{
+  padding: 0 10px;
+  line-height: 30px;
+}
+
+#notice li span{
+  float: right;
+}
+
+#notice li:nth-child(even){
+  background: #ccc;
+}
+
+#gallery{
+  padding: 20px;
+}
+#gallery>li{
+  float: left;
+  margin-right: 30px;
+}
+
+#gallery li:hover{
+  opacity: 0.5;
+}
 
 /* Footer */
 footer div{
