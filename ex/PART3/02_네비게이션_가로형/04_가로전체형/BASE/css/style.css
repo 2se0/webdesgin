@@ -97,7 +97,7 @@ nav ul ul a{
   color: #333;
 }
 
-nav > ul > li > a:hover{
+nav > ul > li  a:hover{
   background: skyblue;
 }
 

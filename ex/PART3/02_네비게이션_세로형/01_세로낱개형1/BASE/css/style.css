@@ -37,8 +37,32 @@ aside .logo{
 	background: #999;
 }
 aside nav{
-	height: 550px;
-	background: #888;
+	background: #333; 
+  width: 180px;
+  margin: 10px 0 0 10px;
+  position: relative;
+  z-index: 1;
+}
+aside nav ul li{
+  line-height: 40px;
+  text-align: center;
+}
+aside nav ul ul{
+  position: absolute;
+  top: -20px;
+  left: 100%;
+  width: 100%;
+  height: 200px;
+  background: #bbb;
+  display: none;
+}
+aside nav ul li a{
+  color: #fff;
+  display: block;
+}
+
+aside nav ul li:hover{
+  background: skyblue;
 }
 /* Main Contents */
 main .slides {

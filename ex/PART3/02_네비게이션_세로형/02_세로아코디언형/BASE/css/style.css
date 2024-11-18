@@ -36,10 +36,63 @@ aside .logo{
 	height: 100px;
 	background: #999;
 }
+
 aside nav{
-	height: 550px;
-	background: #888;
+	padding: 10px;
 }
+
+aside nav ul li{
+  line-height: 40px;
+  text-align: center;
+}
+
+aside nav ul li a{
+  background: #333;
+  color: #fff;
+  display: block;
+}
+aside nav ul li a:hover{
+  background: skyblue;
+}
+
+aside nav ul ul {
+  display: none;
+}
+
+aside nav ul ul li a{
+  background: #fff;
+  color: #333;
+}
+
+
+/* aside nav{
+	background: #333;
+  width: 180px;
+  margin: 10px 0 0 10px;
+}
+aside nav ul li {
+  line-height: 40px;
+  text-align: center;
+}
+aside nav ul ul{
+  background: #ccc;
+  display: none;
+}
+aside nav > ul li a{
+  color: #fff;
+  display: block;
+}
+
+aside nav > ul > li > a:hover{
+  background: #930930;
+  color: #ff0;
+}
+
+aside nav ul ul a:hover{
+  background: #eee;
+  color: #333;
+} */
+
 /* Main Contents */
 main .slides {
 	height: 350px;
