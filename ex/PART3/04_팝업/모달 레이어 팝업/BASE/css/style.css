@@ -84,7 +84,10 @@ footer .sns{
 	right: 0;
 	top: 0;
 	bottom: 0;
-	display: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.7);
 }
 #popup .popup_content{
 	width: 400px;
@@ -106,5 +109,6 @@ footer .sns{
 	padding: 5px 8px;
 }
 #popup.active{
-	display: block;
+  opacity: 1;
+  visibility: visible;
 }
